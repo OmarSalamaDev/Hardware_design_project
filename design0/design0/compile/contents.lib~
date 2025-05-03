@@ -1,1 +1,5 @@
-0
+265
+~E 1 "./src/ALU.vhd" 19 alu
+~A 1 "./src/components/ALU.vhd" 30 alu_arch
+~E 1 "./src/ALU_TB.vhd" 6 alu_tb
+~A 1 "./src/test_benches/ALU_TB.vhd" 9 tb

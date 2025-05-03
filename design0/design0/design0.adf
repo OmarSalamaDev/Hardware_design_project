@@ -26,14 +26,34 @@ FLOWTOOLS=ONLY_IMPL
 [IMPLEMENTATION]
 UCF=
 
-[Files]
-/mux4x4.vhd=-1
-
-[Files.Data]
-.\src\mux4x4.vhd=VHDL Source Code
-
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=alu|alu_arch|0
 ShowHide=ShowTopLevel
 Selected=
+
+[LocalVhdlSets]
+ReorderOnFirstRebuild=1
+EnableVHDL87Key=1
+NetlistCompilation=0
+ElaborationAfterCompilation=0
+MaxErrorsKey=100
+CompileWithDebug=1
+OptimizationLevel=2
+
+[Files.Data]
+.\src\components\SLU.vhd=VHDL Source Code
+.\src\components\ALU.vhd=VHDL Source Code
+.\src\test_benches\ALU_TB.vhd=VHDL Source Code
+.\src\test_benches\SLU_TB.vhd=VHDL Source Code
+
+[Groups]
+components=1
+test_benches=1
+
+[Files]
+components/SLU.vhd=-1
+components/ALU.vhd=-1
+test_benches/SLU_TB.vhd=-1
+test_benches/ALU_TB.vhd=-1
+

@@ -1,1 +1,4 @@
-.\src\mux4x4.vhd
+.\src\components\SLU.vhd
+.\src\components\ALU.vhd
+.\src\test_benches\SLU_TB.vhd
+.\src\test_benches\ALU_TB.vhd

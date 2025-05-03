@@ -1,0 +1,36 @@
+timestamp=1746292653360
+
+[alu]
+A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*85328
+B/alu_arch=3*15332
+H/alu_arch=0*105198
+R=./src/ALU.vhd|19
+V=0*51334
+
+[alu_tb]
+A/tb=A/TB 21|./src/test_benches/ALU_TB.vhd|9|1*88173
+B/tb=3*19176
+H/tb=0*106532
+R=./src/ALU_TB.vhd|6
+V=0*62016
+
+[~A]
+./src/ALU.vhd~ALU=0*49937*50326
+./src/ALU.vhd~ALU_ARCHALU=0*104540*105133
+./src/ALU_TB.vhd~ALU_tb=0*56102*56294
+./src/ALU_TB.vhd~TBALU_TB=0*99817*101191
+./src/ALU_TB.vhd~TBALU_tb=0*66028*67414
+./src/components/ALU.vhd~ALU_ARCHALU=0*105852*106456
+./src/test_benches/ALU_TB.vhd~TBALU_TB=0*110468*111855
+ModifyID=265
+Version=73
+
+[~MFT]
+0=295|0design0.mgf|111855|97528
+1=63|1design0.mgf|88173|85328
+3=27|3design0.mgf|19176|15332
+
+[~U]
+alu=11|0*50383|0*50622
+alu_tb=ALU_tb 11|0*61744|0*61803
+
