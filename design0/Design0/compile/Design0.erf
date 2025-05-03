@@ -1,0 +1,5 @@
+MESSAGE "File: C:\My_Designs\Design1\Design0\src\ControlUnit.vhd" 
+MESSAGE "Compile Entity "ControlUnit"" 
+MESSAGE "Entity `ControlUnit' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "Behavioral" of Entity "ControlUnit"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 

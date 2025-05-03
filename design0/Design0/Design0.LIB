@@ -1,0 +1,23 @@
+timestamp=1746257907666
+
+[controlunit]
+A/behavioral=A/Behavioral 21|./src/ControlUnit.vhd|16|1*0
+B/behavioral=3*0
+H/behavioral=0*4195
+R=./src/ControlUnit.vhd|5
+V=0*1877
+
+[~A]
+./src/ControlUnit.vhd~BehavioralControlUnit=0*5412*7567
+./src/ControlUnit.vhd~ControlUnit=0*0*466
+ModifyID=7
+Version=73
+
+[~MFT]
+0=7|0Design0.mgf|7567|0
+1=0|1Design0.mgf|0|0
+3=0|3Design0.mgf|0|0
+
+[~U]
+controlunit=ControlUnit 11|0*539|0*1081
+
