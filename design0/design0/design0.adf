@@ -46,14 +46,18 @@ components=1
 components\test_benches=1
 
 [Files]
+components/sign_ext.vhd=-1
 components/SL2.vhd=-1
 components/ALU.vhd=-1
+components\test_benches/sign_ext_TB.vhd=-1
 components\test_benches/SL2_TB.vhd=-1
 components\test_benches/ALU_TB.vhd=-1
 
 [Files.Data]
+.\src\components\sign_ext.vhd=VHDL Source Code
 .\src\components\SL2.vhd=VHDL Source Code
 .\src\components\ALU.vhd=VHDL Source Code
+.\src\components\test_benches\sign_ext_TB.vhd=VHDL Source Code
 .\src\components\test_benches\SL2_TB.vhd=VHDL Source Code
 .\src\components\test_benches\ALU_TB.vhd=VHDL Source Code
 

@@ -1,3 +1,5 @@
 i<>.\src\mux4x4.vhd
 i<>.\src\SLU.vhd
 i<>.\src\SLU_TB.vhd
+i<>.\src\sign_ext.vhd
+i<>.\src\sign_ext_TB.vhd

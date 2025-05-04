@@ -4,5 +4,5 @@ C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/stdlogic.vhd=S
 C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/arith.vhd=S
 C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/numstd.vhd=S
 C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/signed.vhd=S
-C:\Data\code\Hardwere_design_project\design0\design0/src/components/SL2.vhd=S
-C:\Data\code\Hardwere_design_project\design0\design0/src/components/test_benches/SL2_TB.vhd=S
+C:\Data\code\Hardwere_design_project\design0\design0/src/components/sign_ext.vhd=S
+C:\Data\code\Hardwere_design_project\design0\design0/src/components/test_benches/sign_ext_TB.vhd=S

@@ -1,4 +1,4 @@
-timestamp=1746383947967
+timestamp=1746385602753
 
 [alu]
 A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*103508
@@ -14,9 +14,26 @@ H/tb=0*120186
 R=./src/ALU_TB.vhd|6
 V=0*62016
 
+[sign_ext]
+A/sign_ext_arch=A/sign_ext_ARCH 21|./src/components/sign_ext.vhd|15|1*113490
+B/sign_ext_arch=3*34628
+H/sign_ext_arch=0*136579
+R=./src/components/sign_ext.vhd|7
+V=0*128277
+
+[sign_ext_tb]
+A/tb=A/TB 21|./src/components/test_benches/sign_ext_TB.vhd|9|1*116969
+B/tb=3*35264
+H/tb=0*140028
+R=./src/components/test_benches/sign_ext_TB.vhd|6
+V=0*130345
+
 [sl2]
+A/sign_ext_arch=A/sign_ext_ARCH 21|./src/components/sign_ext.vhd|15|1*107864
 A/sl2_arch=A/SL2_ARCH 21|./src/components/SL2.vhd|19|1*106353
+B/sign_ext_arch=3*33283
 B/sl2_arch=3*32736
+H/sign_ext_arch=0*129350
 H/sl2_arch=0*126939
 R=./src/components/SL2.vhd|10
 V=0*113226
@@ -37,21 +54,28 @@ V=0*114864
 ./src/components/ALU.vhd~ALU_ARCHALU=0*126259*126863
 ./src/components/SL2.vhd~SL2=0*111933*112227
 ./src/components/SL2.vhd~SL2_ARCHSL2=0*127030*127189
+./src/components/sign_ext.vhd~sign_ext=0*127265*127574
+./src/components/sign_ext.vhd~sign_ext_ARCHSL2=0*129451*129634
+./src/components/sign_ext.vhd~sign_ext_ARCHsign_ext=0*136680*136873
 ./src/components/test_benches/ALU_TB.vhd~TBALU_TB=0*124121*125516
 ./src/components/test_benches/SL2_TB.vhd~SL2_TB=0*114289*114505
 ./src/components/test_benches/SL2_TB.vhd~TBSL2_TB=0*119718*120097
+./src/components/test_benches/sign_ext_TB.vhd~TBsign_ext_TB=0*142503*142993
+./src/components/test_benches/sign_ext_TB.vhd~sign_ext_TB=0*129720*129951
 ./src/test_benches/ALU_TB.vhd~TBALU_TB=0*110468*111855
-ModifyID=309
+ModifyID=345
 Version=73
 
 [~MFT]
-0=339|0design0.mgf|127189|105899
-1=75|1design0.mgf|106353|97347
-3=39|3design0.mgf|32736|24581
+0=376|0design0.mgf|142993|115087
+1=84|1design0.mgf|116969|103704
+3=48|3design0.mgf|35264|25290
 
 [~U]
 alu=11|0*50383|0*50622
 alu_tb=ALU_tb 11|0*61744|0*61803
+sign_ext=11|0*127652|0*127823
+sign_ext_tb=sign_ext_TB 11|0*130048|0*130122
 sl2=SL2 11|0*112621|0*112777
 sl2_tb=SL2_TB 11|0*114592|0*114651
 

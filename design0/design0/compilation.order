@@ -1,4 +1,6 @@
+.\src\components\sign_ext.vhd
 .\src\components\SL2.vhd
 .\src\components\ALU.vhd
+.\src\components\test_benches\sign_ext_TB.vhd
 .\src\components\test_benches\SL2_TB.vhd
 .\src\components\test_benches\ALU_TB.vhd
