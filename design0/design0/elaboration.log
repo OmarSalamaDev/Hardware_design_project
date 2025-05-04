@@ -1,11 +1,11 @@
-elbread.dll ver. 1.0.5.365 Sat May 03 20:18:49 2025
+elbread.dll ver. 1.0.5.365 Sun May 04 21:36:23 2025
 
 
 --------------------------------
 Entity  | Architecture | Library
 --------------------------------
-alu_tb  | tb           | design0
-alu     | alu_arch     | design0
+sl2_tb  | tb           | design0
+sl2     | sl2_arch     | design0
 --------------------------------
 
 ---------------------------

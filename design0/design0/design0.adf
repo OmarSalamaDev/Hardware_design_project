@@ -41,19 +41,19 @@ MaxErrorsKey=100
 CompileWithDebug=1
 OptimizationLevel=2
 
-[Files.Data]
-.\src\components\SLU.vhd=VHDL Source Code
-.\src\components\ALU.vhd=VHDL Source Code
-.\src\test_benches\ALU_TB.vhd=VHDL Source Code
-.\src\test_benches\SLU_TB.vhd=VHDL Source Code
-
 [Groups]
 components=1
-test_benches=1
+components\test_benches=1
 
 [Files]
-components/SLU.vhd=-1
+components/SL2.vhd=-1
 components/ALU.vhd=-1
-test_benches/SLU_TB.vhd=-1
-test_benches/ALU_TB.vhd=-1
+components\test_benches/SL2_TB.vhd=-1
+components\test_benches/ALU_TB.vhd=-1
+
+[Files.Data]
+.\src\components\SL2.vhd=VHDL Source Code
+.\src\components\ALU.vhd=VHDL Source Code
+.\src\components\test_benches\SL2_TB.vhd=VHDL Source Code
+.\src\components\test_benches\ALU_TB.vhd=VHDL Source Code
 

@@ -1,5 +1,9 @@
-265
+309
+~E 1 "./src/ALU_TB.vhd" 6 alu_tb
+~A 1 "./src/components/test_benches/ALU_TB.vhd" 9 tb
 ~E 1 "./src/ALU.vhd" 19 alu
 ~A 1 "./src/components/ALU.vhd" 30 alu_arch
-~E 1 "./src/ALU_TB.vhd" 6 alu_tb
-~A 1 "./src/test_benches/ALU_TB.vhd" 9 tb
+~E 1 "./src/components/SL2.vhd" 10 sl2
+~A 1 "./src/components/SL2.vhd" 19 sl2_arch
+~E 1 "./src/components/test_benches/SL2_TB.vhd" 6 sl2_tb
+~A 1 "./src/components/test_benches/SL2_TB.vhd" 9 tb

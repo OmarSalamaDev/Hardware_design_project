@@ -1,18 +1,32 @@
-timestamp=1746292653360
+timestamp=1746383947967
 
 [alu]
-A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*85328
-B/alu_arch=3*15332
-H/alu_arch=0*105198
+A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*103508
+B/alu_arch=3*28892
+H/alu_arch=0*125605
 R=./src/ALU.vhd|19
 V=0*51334
 
 [alu_tb]
-A/tb=A/TB 21|./src/test_benches/ALU_TB.vhd|9|1*88173
-B/tb=3*19176
-H/tb=0*106532
+A/tb=A/TB 21|./src/components/test_benches/ALU_TB.vhd|9|1*99304
+B/tb=3*24918
+H/tb=0*120186
 R=./src/ALU_TB.vhd|6
 V=0*62016
+
+[sl2]
+A/sl2_arch=A/SL2_ARCH 21|./src/components/SL2.vhd|19|1*106353
+B/sl2_arch=3*32736
+H/sl2_arch=0*126939
+R=./src/components/SL2.vhd|10
+V=0*113226
+
+[sl2_tb]
+A/tb=A/TB 21|./src/components/test_benches/SL2_TB.vhd|9|1*97347
+B/tb=3*24581
+H/tb=0*117739
+R=./src/components/test_benches/SL2_TB.vhd|6
+V=0*114864
 
 [~A]
 ./src/ALU.vhd~ALU=0*49937*50326
@@ -20,17 +34,24 @@ V=0*62016
 ./src/ALU_TB.vhd~ALU_tb=0*56102*56294
 ./src/ALU_TB.vhd~TBALU_TB=0*99817*101191
 ./src/ALU_TB.vhd~TBALU_tb=0*66028*67414
-./src/components/ALU.vhd~ALU_ARCHALU=0*105852*106456
+./src/components/ALU.vhd~ALU_ARCHALU=0*126259*126863
+./src/components/SL2.vhd~SL2=0*111933*112227
+./src/components/SL2.vhd~SL2_ARCHSL2=0*127030*127189
+./src/components/test_benches/ALU_TB.vhd~TBALU_TB=0*124121*125516
+./src/components/test_benches/SL2_TB.vhd~SL2_TB=0*114289*114505
+./src/components/test_benches/SL2_TB.vhd~TBSL2_TB=0*119718*120097
 ./src/test_benches/ALU_TB.vhd~TBALU_TB=0*110468*111855
-ModifyID=265
+ModifyID=309
 Version=73
 
 [~MFT]
-0=295|0design0.mgf|111855|97528
-1=63|1design0.mgf|88173|85328
-3=27|3design0.mgf|19176|15332
+0=339|0design0.mgf|127189|105899
+1=75|1design0.mgf|106353|97347
+3=39|3design0.mgf|32736|24581
 
 [~U]
 alu=11|0*50383|0*50622
 alu_tb=ALU_tb 11|0*61744|0*61803
+sl2=SL2 11|0*112621|0*112777
+sl2_tb=SL2_TB 11|0*114592|0*114651
 

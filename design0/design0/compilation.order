@@ -1,4 +1,4 @@
-.\src\components\SLU.vhd
+.\src\components\SL2.vhd
 .\src\components\ALU.vhd
-.\src\test_benches\SLU_TB.vhd
-.\src\test_benches\ALU_TB.vhd
+.\src\components\test_benches\SL2_TB.vhd
+.\src\components\test_benches\ALU_TB.vhd

@@ -24,14 +24,13 @@ architecture TB of ALU_TB is
 
 begin
 
-    uut: ALU
-        port map (
-            A => A_tb,
-            B => B_tb,
-            control => control_tb,
-            result => result_tb,
-            zero => zero_tb
-        );
+    c1: ALU port map (
+    	A => A_tb,
+        B => B_tb,
+        control => control_tb,
+        result => result_tb,
+        zero => zero_tb
+    );
 
     process	is
     begin
