@@ -1,12 +1,12 @@
-elbread.dll ver. 1.0.5.365 Sun May 04 22:06:58 2025
+elbread.dll ver. 1.0.5.365 Sun May 04 22:44:16 2025
 
 
---------------------------------------
-Entity       | Architecture  | Library
---------------------------------------
-sign_ext_tb  | tb            | design0
-sign_ext     | sign_ext_arch | design0
---------------------------------------
+-----------------------------------
+Entity     | Architecture | Library
+-----------------------------------
+mux4x1_tb  | tb           | design0
+mux4x1     | mux4x1_arch  | design0
+-----------------------------------
 
 ---------------------------
 Package           | Library

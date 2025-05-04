@@ -1,4 +1,4 @@
-timestamp=1746385602753
+timestamp=1746387725547
 
 [alu]
 A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*103508
@@ -13,6 +13,20 @@ B/tb=3*24918
 H/tb=0*120186
 R=./src/ALU_TB.vhd|6
 V=0*62016
+
+[mux4x1]
+A/mux4x1_arch=A/MUX4x1_ARCH 21|./src/components/MUX4x1.vhd|16|1*137047
+B/mux4x1_arch=3*39184
+H/mux4x1_arch=0*158282
+R=./src/components/MUX4x1.vhd|11
+V=0*144438
+
+[mux4x1_tb]
+A/tb=A/TB 21|./src/components/test_benches/MUX4x1_TB.vhd|9|1*133720
+B/tb=3*37442
+H/tb=0*153744
+R=./src/components/test_benches/MUX4x1_TB.vhd|6
+V=0*149089
 
 [sign_ext]
 A/sign_ext_arch=A/sign_ext_ARCH 21|./src/components/sign_ext.vhd|15|1*113490
@@ -30,11 +44,11 @@ V=0*130345
 
 [sl2]
 A/sign_ext_arch=A/sign_ext_ARCH 21|./src/components/sign_ext.vhd|15|1*107864
-A/sl2_arch=A/SL2_ARCH 21|./src/components/SL2.vhd|19|1*106353
+A/sl2_arch=A/SL2_ARCH 21|./src/components/SL2.vhd|19|1*128882
 B/sign_ext_arch=3*33283
-B/sl2_arch=3*32736
+B/sl2_arch=3*36895
 H/sign_ext_arch=0*129350
-H/sl2_arch=0*126939
+H/sl2_arch=0*148158
 R=./src/components/SL2.vhd|10
 V=0*113226
 
@@ -52,28 +66,34 @@ V=0*114864
 ./src/ALU_TB.vhd~TBALU_TB=0*99817*101191
 ./src/ALU_TB.vhd~TBALU_tb=0*66028*67414
 ./src/components/ALU.vhd~ALU_ARCHALU=0*126259*126863
+./src/components/MUX4x1.vhd~MUX4x1=0*143092*143448
+./src/components/MUX4x1.vhd~MUX4x1_ARCHMUX4x1=0*158379*158598
 ./src/components/SL2.vhd~SL2=0*111933*112227
-./src/components/SL2.vhd~SL2_ARCHSL2=0*127030*127189
+./src/components/SL2.vhd~SL2_ARCHSL2=0*148249*148408
 ./src/components/sign_ext.vhd~sign_ext=0*127265*127574
 ./src/components/sign_ext.vhd~sign_ext_ARCHSL2=0*129451*129634
 ./src/components/sign_ext.vhd~sign_ext_ARCHsign_ext=0*136680*136873
 ./src/components/test_benches/ALU_TB.vhd~TBALU_TB=0*124121*125516
+./src/components/test_benches/MUX4x1_TB.vhd~MUX4x1_TB=0*148484*148709
+./src/components/test_benches/MUX4x1_TB.vhd~TBMUX4x1_TB=0*157341*158187
 ./src/components/test_benches/SL2_TB.vhd~SL2_TB=0*114289*114505
 ./src/components/test_benches/SL2_TB.vhd~TBSL2_TB=0*119718*120097
 ./src/components/test_benches/sign_ext_TB.vhd~TBsign_ext_TB=0*142503*142993
 ./src/components/test_benches/sign_ext_TB.vhd~sign_ext_TB=0*129720*129951
 ./src/test_benches/ALU_TB.vhd~TBALU_TB=0*110468*111855
-ModifyID=345
+ModifyID=401
 Version=73
 
 [~MFT]
-0=376|0design0.mgf|142993|115087
-1=84|1design0.mgf|116969|103704
-3=48|3design0.mgf|35264|25290
+0=434|0design0.mgf|158598|121901
+1=100|1design0.mgf|137047|118336
+3=64|3design0.mgf|39184|26759
 
 [~U]
 alu=11|0*50383|0*50622
 alu_tb=ALU_tb 11|0*61744|0*61803
+mux4x1=MUX4x1 11|0*143522|0*143807
+mux4x1_tb=MUX4x1_TB 11|0*148802|0*148870
 sign_ext=11|0*127652|0*127823
 sign_ext_tb=sign_ext_TB 11|0*130048|0*130122
 sl2=SL2 11|0*112621|0*112777
