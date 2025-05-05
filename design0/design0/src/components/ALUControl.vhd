@@ -9,7 +9,7 @@ entity ALUControl is
         funct: in  std_logic_vector(5 downto 0);
         ALUControl: out std_logic_vector(2 downto 0)
     );
-end entity;
+end entity;	
 
 architecture Behavioral of ALUControl is
 begin

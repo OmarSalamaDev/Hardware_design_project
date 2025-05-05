@@ -28,7 +28,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=alu|alu_arch|0
+HierarchyInformation=alucontrol_tb|behavioral|0 mux2x1_5bit_tb|tb|0 mux4x1_32bit_tb|tb|0 sl2|sign_ext_arch|0 sl2_jump_tb|tb|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -43,29 +43,37 @@ OptimizationLevel=2
 
 [Groups]
 components=1
-components\test_benches=1
+test_benches=1
 
 [Files]
-/ALUControl.vhd=-1
-/ALUControl_TB.vhd=-1
-components/MUX4x1.vhd=-1
+components/MUX2x1_5bit.vhd=-1
+components/SL2_Jump .vhd=-1
+components/ALUControl.vhd=-1
+components/MUX4x1_32bit.vhd=-1
 components/sign_ext.vhd=-1
 components/SL2.vhd=-1
 components/ALU.vhd=-1
-components\test_benches/MUX4x1_TB.vhd=-1
-components\test_benches/sign_ext_TB.vhd=-1
-components\test_benches/SL2_TB.vhd=-1
-components\test_benches/ALU_TB.vhd=-1
+test_benches/MUX2x1_5bit_TB.vhd=-1
+test_benches/SL2_Jump_TB .vhd=-1
+test_benches/ALUControl_TB.vhd=-1
+test_benches/MUX4x1_32bit_TB.vhd=-1
+test_benches/sign_ext_TB.vhd=-1
+test_benches/SL2_TB.vhd=-1
+test_benches/ALU_TB.vhd=-1
 
 [Files.Data]
-.\src\ALUControl.vhd=VHDL Source Code
-.\src\ALUControl_TB.vhd=VHDL Source Code
-.\src\components\MUX4x1.vhd=VHDL Source Code
+.\src\components\MUX2x1_5bit.vhd=VHDL Source Code
+.\src\components\SL2_Jump .vhd=VHDL Source Code
+.\src\components\ALUControl.vhd=VHDL Source Code
+.\src\components\MUX4x1_32bit.vhd=VHDL Source Code
 .\src\components\sign_ext.vhd=VHDL Source Code
 .\src\components\SL2.vhd=VHDL Source Code
 .\src\components\ALU.vhd=VHDL Source Code
-.\src\components\test_benches\MUX4x1_TB.vhd=VHDL Source Code
-.\src\components\test_benches\sign_ext_TB.vhd=VHDL Source Code
-.\src\components\test_benches\SL2_TB.vhd=VHDL Source Code
-.\src\components\test_benches\ALU_TB.vhd=VHDL Source Code
+.\src\test_benches\MUX2x1_5bit_TB.vhd=VHDL Source Code
+.\src\test_benches\SL2_Jump_TB .vhd=VHDL Source Code
+.\src\test_benches\ALUControl_TB.vhd=VHDL Source Code
+.\src\test_benches\MUX4x1_32bit_TB.vhd=VHDL Source Code
+.\src\test_benches\sign_ext_TB.vhd=VHDL Source Code
+.\src\test_benches\SL2_TB.vhd=VHDL Source Code
+.\src\test_benches\ALU_TB.vhd=VHDL Source Code
 

@@ -1,384 +1,71 @@
-acom $DSN/src/ALU_TB.vhd
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom $DSN/src/components/ALUControl.vhd
 # Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_tb"
-# Entity `ALU_tb' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom $DSN/src/ALU_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# Design: Design design0 already active.
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim alu alu_arch
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2422 kB (elbread=1070 elab2=303 kernel=1049 sdf=0)
-# 2:54 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu (alu_arch)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-acom $DSN/src/ALU_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2428 kB (elbread=1070 elab2=309 kernel=1049 sdf=0)
-# 6:06 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/alu.vhd $DSN/src/alu_tb.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "ALU_ARCH" of Entity "ALU"
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2428 kB (elbread=1070 elab2=309 kernel=1049 sdf=0)
-# 6:13 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/ALU_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2429 kB (elbread=1070 elab2=310 kernel=1049 sdf=0)
-# 7:56 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/ALU_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2429 kB (elbread=1070 elab2=310 kernel=1049 sdf=0)
-# 7:59 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/ALU_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2428 kB (elbread=1070 elab2=309 kernel=1049 sdf=0)
-# 8:05 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/ALU.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "ALU_ARCH" of Entity "ALU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.2 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2428 kB (elbread=1070 elab2=309 kernel=1049 sdf=0)
-# 8:07 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__33.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/ALU.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "ALU_ARCH" of Entity "ALU"
-# Error: COMP96_0329: ALU.vhd : (56, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (56, 28): Keyword "generate" expected.
-# Error: COMP96_0019: ALU.vhd : (58, 2): Keyword "end" expected.
-# Error: COMP96_0016: ALU.vhd : (59, 3): Design unit declaration expected.
-# Error: COMP96_0018: ALU.vhd : (62, 17): Identifier expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [s]
-acom $DSN/src/ALU.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "ALU_ARCH" of Entity "ALU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom $DSN/src/ALU.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "ALU_ARCH" of Entity "ALU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2429 kB (elbread=1070 elab2=310 kernel=1049 sdf=0)
-# 8:13 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__56.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/components/ALU.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\ALU.vhd
-# Compile Entity "ALU"
-# Entity `ALU' has been skipped - no difference detected.
-# Compile Architecture "ALU_ARCH" of Entity "ALU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom $DSN/src/test_benches/ALU_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\test_benches\ALU_TB.vhd
-# Compile Entity "ALU_TB"
-# Entity `ALU_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "ALU_TB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-endsim
-# All when statements cleared.
-# Simulation has been stopped
-asim alu_tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.3 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 2429 kB (elbread=1070 elab2=310 kernel=1049 sdf=0)
-# 8:18 PM, Saturday, May 3, 2025
-# Simulation has been initialized
-# Selected Top-Level: alu_tb (tb)
-run 100 ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /uut,  Process: line__56.
-# KERNEL: stopped at time: 100 ns
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/components/SL2.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\SL2.vhd
-# Compile Entity "SL2"
-# Compile Architecture "SL2_ARCH" of Entity "SL2"
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\ALUControl.vhd
+# Compile Entity "ALUControl"
+# Entity `ALUControl' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "ALUControl"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom $DSN/src/components/test_benches/SL2_TB.vhd
+acom "$DSN/src/SL2_Jump .vhd"
 # Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\test_benches\SL2_TB.vhd
-# Compile Entity "SL2_TB"
-# Compile Architecture "TB" of Entity "SL2_TB"
-# Error: COMP96_0363: SL2_TB.vhd : (22, 5): Component instantiation statement must have a label.
-# Error: COMP96_0019: SL2_TB.vhd : (29, 1): Keyword "when" expected.
-# Error: COMP96_0015: SL2_TB.vhd : (29, 1): ';' expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [s]
-acom $DSN/src/components/test_benches/SL2_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\test_benches\SL2_TB.vhd
-# Compile Entity "SL2_TB"
-# Entity `SL2_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "SL2_TB"
-# Error: COMP96_0019: SL2_TB.vhd : (29, 1): Keyword "when" expected.
-# Error: COMP96_0015: SL2_TB.vhd : (29, 1): ';' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
-acom $DSN/src/components/test_benches/SL2_TB.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\test_benches\SL2_TB.vhd
-# Compile Entity "SL2_TB"
-# Entity `SL2_TB' has been skipped - no difference detected.
-# Compile Architecture "TB" of Entity "SL2_TB"
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\SL2_Jump .vhd
+# Compile Entity "SL2_Jump"
+# Compile Architecture "SL2_Jump_ARCH" of Entity "SL2_Jump"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# Simulation has been stopped
+acom "$DSN/src/SL2_Jump_TB .vhd"
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\SL2_Jump_TB .vhd
+# Compile Entity "SL2_Jump_TB"
+# Compile Architecture "TB" of Entity "SL2_Jump_TB"
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (23, 19): Improper array length. Actual length is 32. Expected length is 26.
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (24, 17): Improper array length. Actual length is 32. Expected length is 28.
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (27, 10): Improper array length. Actual length is 104. Expected length is 32.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom "$DSN/src/SL2_Jump_TB .vhd"
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\SL2_Jump_TB .vhd
+# Compile Entity "SL2_Jump_TB"
+# Entity `SL2_Jump_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "SL2_Jump_TB"
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (23, 19): Improper array length. Actual length is 32. Expected length is 26.
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (24, 17): Improper array length. Actual length is 32. Expected length is 28.
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (27, 10): Improper array length. Actual length is 26. Expected length is 32.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom "$DSN/src/SL2_Jump_TB .vhd"
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\SL2_Jump_TB .vhd
+# Compile Entity "SL2_Jump_TB"
+# Entity `SL2_Jump_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "SL2_Jump_TB"
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (23, 19): Improper array length. Actual length is 32. Expected length is 26.
+# Error: COMP96_0367: SL2_Jump_TB .vhd : (24, 17): Improper array length. Actual length is 32. Expected length is 28.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom "$DSN/src/SL2_Jump_TB .vhd"
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\SL2_Jump_TB .vhd
+# Compile Entity "SL2_Jump_TB"
+# Entity `SL2_Jump_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "SL2_Jump_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom "$DSN/src/SL2_Jump_TB .vhd"
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\SL2_Jump_TB .vhd
+# Compile Entity "SL2_Jump_TB"
+# Entity `SL2_Jump_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "SL2_Jump_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-asim sl2_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim sl2_jump_tb tb
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # asim: Stack memory: 32MB
 # asim: Retval memory: 32MB
-acom $DSN/src/components/SL2.vhd
-# Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\SL2.vhd
-# Compile Entity "SL2"
-# Entity `SL2' has been skipped - no difference detected.
-# Compile Architecture "SL2_ARCH" of Entity "SL2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
 # KERNEL: Kernel process initialization phase.
 # KERNEL: Time resolution set to 1ps.
@@ -388,14 +75,105 @@ acom $DSN/src/components/SL2.vhd
 # ELAB2: Elaboration final pass complete - time: 0.3 [s].
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 2417 kB (elbread=1070 elab2=299 kernel=1048 sdf=0)
-# 9:36 PM, Sunday, May 4, 2025
+# 1:12 AM, Tuesday, May 6, 2025
 # Simulation has been initialized
-# Selected Top-Level: sl2_tb (tb)
-run 100 ns
-# KERNEL: stopped at time: 100 ns
+# Selected Top-Level: sl2_jump_tb (tb)
+run 150 ns
+# KERNEL: stopped at time: 150 ns
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-acom $DSN/src/components/test_benches/SL2_TB.vhd
+acom $DSN/src/MUX2x1_5bit.vhd
 # Compile...
-# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\test_benches\SL2_TB.vhd
-# Compile Entity "SL2_TB"
-# Entity `SL2_TB' has been skipped - no difference detect
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\MUX2x1_5bit.vhd
+# Compile Entity "MUX2x1_5bit"
+# Compile Architecture "MUX2x1_5bit_ARCH" of Entity "MUX2x1_5bit"
+# Error: COMP96_0071: MUX2x1_5bit.vhd : (18, 20): Operator "=" is not defined for such operands.
+# Error: COMP96_0104: MUX2x1_5bit.vhd : (18, 20): Undefined type of expression.
+# Error: COMP96_0098: MUX2x1_5bit.vhd : (18, 20): Boolean type expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom $DSN/src/MUX2x1_5bit.vhd
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\MUX2x1_5bit.vhd
+# Compile Entity "MUX2x1_5bit"
+# Entity `MUX2x1_5bit' has been skipped - no difference detected.
+# Compile Architecture "MUX2x1_5bit_ARCH" of Entity "MUX2x1_5bit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom $DSN/src/MUX2x1_5bit_TB.vhd
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\MUX2x1_5bit_TB.vhd
+# Compile Entity "MUX2x1_5bit_TB"
+# Compile Architecture "TB" of Entity "MUX2x1_5bit_TB"
+# Error: COMP96_0367: MUX2x1_5bit_TB.vhd : (34, 11): Improper array length. Actual length is 20. Expected length is 5.
+# Error: COMP96_0367: MUX2x1_5bit_TB.vhd : (35, 11): Improper array length. Actual length is 20. Expected length is 5.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom $DSN/src/MUX2x1_5bit_TB.vhd
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\MUX2x1_5bit_TB.vhd
+# Compile Entity "MUX2x1_5bit_TB"
+# Entity `MUX2x1_5bit_TB' has been skipped - no difference detected.
+# Compile Architecture "TB" of Entity "MUX2x1_5bit_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim mux2x1_5bit_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2417 kB (elbread=1070 elab2=299 kernel=1048 sdf=0)
+# 1:21 AM, Tuesday, May 6, 2025
+# Simulation has been initialized
+# Selected Top-Level: mux2x1_5bit_tb (tb)
+run 150 ns
+# KERNEL: stopped at time: 150 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom $DSN/src/components/MUX4x1_32bit.vhd
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\components\MUX4x1_32bit.vhd
+# Compile Entity "MUX4x1_32bit"
+# Compile Architecture "MUX4x1_32bit_ARCH" of Entity "MUX4x1_32bit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom $DSN/src/test_benches/MUX4x1_32bit_TB.vhd
+# Compile...
+# File: C:\Data\code\Hardwere_design_project\design0\design0\src\test_benches\MUX4x1_32bit_TB.vhd
+# Compile Entity "MUX4x1_32bit_TB"
+# Compile Architecture "TB" of Entity "MUX4x1_32bit_TB"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim mux4x1_32bit_tb tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2421 kB (elbread=1070 elab2=302 kernel=1049 sdf=0)
+# 1:24 AM, Tuesday, May 6, 2025
+# Simulation has been initialized
+# Selected Top-Level: mux4x1_32bit_tb (tb)
+run 150 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /c1,  Process: line__18.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /c1,  Process: line__18.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /c1,  Process: line__18.
+# KERNEL: stopped at time: 150 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Simulation has been stopped

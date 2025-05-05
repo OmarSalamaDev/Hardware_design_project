@@ -1,4 +1,4 @@
-timestamp=1746439035590
+timestamp=1746483839329
 
 [alu]
 A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*103508
@@ -15,9 +15,9 @@ R=./src/ALU_TB.vhd|6
 V=0*62016
 
 [alucontrol]
-A/behavioral=A/Behavioral 21|./src/ALUControl.vhd|14|1*138929
-B/behavioral=3*39998
-H/behavioral=0*161438
+A/behavioral=A/Behavioral 21|./src/components/ALUControl.vhd|14|1*143601
+B/behavioral=3*46402
+H/behavioral=0*167711
 R=./src/ALUControl.vhd|6
 V=0*159889
 
@@ -28,12 +28,40 @@ H/behavioral=0*162480
 R=./src/ALUControl_TB.vhd|4
 V=0*167621
 
+[mux2x1_5bit]
+A/mux2x1_5bit_arch=A/MUX2x1_5bit_ARCH 21|./src/MUX2x1_5bit.vhd|16|1*151072
+B/mux2x1_5bit_arch=3*50085
+H/mux2x1_5bit_arch=0*179933
+R=./src/MUX2x1_5bit.vhd|7
+V=0*178705
+
+[mux2x1_5bit_tb]
+A/tb=A/TB 21|./src/MUX2x1_5bit_TB.vhd|9|1*152602
+B/tb=3*50568
+H/tb=0*181003
+R=./src/MUX2x1_5bit_TB.vhd|6
+V=0*180911
+
 [mux4x1]
 A/mux4x1_arch=A/MUX4x1_ARCH 21|./src/components/MUX4x1.vhd|16|1*137047
 B/mux4x1_arch=3*39184
 H/mux4x1_arch=0*158282
 R=./src/components/MUX4x1.vhd|11
 V=0*144438
+
+[mux4x1_32bit]
+A/mux4x1_32bit_arch=A/MUX4x1_32bit_ARCH 21|./src/components/MUX4x1_32bit.vhd|16|1*154940
+B/mux4x1_32bit_arch=3*51493
+H/mux4x1_32bit_arch=0*184453
+R=./src/components/MUX4x1_32bit.vhd|7
+V=0*185855
+
+[mux4x1_32bit_tb]
+A/tb=A/TB 21|./src/test_benches/MUX4x1_32bit_TB.vhd|9|1*156846
+B/tb=3*52313
+H/tb=0*187974
+R=./src/test_benches/MUX4x1_32bit_TB.vhd|6
+V=0*192861
 
 [mux4x1_tb]
 A/tb=A/TB 21|./src/components/test_benches/MUX4x1_TB.vhd|9|1*133720
@@ -66,6 +94,20 @@ H/sl2_arch=0*148158
 R=./src/components/SL2.vhd|10
 V=0*113226
 
+[sl2_jump]
+A/sl2_jump_arch=A/SL2_Jump_ARCH 21|./src/SL2_Jump .vhd|19|1*145536
+B/sl2_jump_arch=3*49208
+H/sl2_jump_arch=0*168914
+R=./src/SL2_Jump .vhd|11
+V=0*169885
+
+[sl2_jump_tb]
+A/tb=A/TB 21|./src/SL2_Jump_TB .vhd|9|1*148995
+B/tb=3*49760
+H/tb=0*174599
+R=./src/SL2_Jump_TB .vhd|6
+V=0*171527
+
 [sl2_tb]
 A/tb=A/TB 21|./src/components/test_benches/SL2_TB.vhd|9|1*97347
 B/tb=3*24581
@@ -83,9 +125,20 @@ V=0*114864
 ./src/ALU_TB.vhd~ALU_tb=0*56102*56294
 ./src/ALU_TB.vhd~TBALU_TB=0*99817*101191
 ./src/ALU_TB.vhd~TBALU_tb=0*66028*67414
+./src/MUX2x1_5bit.vhd~MUX2x1_5bit=0*177584*177914
+./src/MUX2x1_5bit.vhd~MUX2x1_5bit_ARCHMUX2x1_5bit=0*180040*180215
+./src/MUX2x1_5bit_TB.vhd~MUX2x1_5bit_TB=0*180304*180520
+./src/MUX2x1_5bit_TB.vhd~TBMUX2x1_5bit_TB=0*183311*183912
+./src/SL2_Jump .vhd~SL2_Jump=0*168547*168846
+./src/SL2_Jump .vhd~SL2_Jump_ARCHSL2_Jump=0*169015*169176
+./src/SL2_Jump_TB .vhd~SL2_Jump_TB=0*170948*171156
+./src/SL2_Jump_TB .vhd~TBSL2_Jump_TB=0*177074*177508
 ./src/components/ALU.vhd~ALU_ARCHALU=0*126259*126863
+./src/components/ALUControl.vhd~BehavioralALUControl=0*167806*168455
 ./src/components/MUX4x1.vhd~MUX4x1=0*143092*143448
 ./src/components/MUX4x1.vhd~MUX4x1_ARCHMUX4x1=0*158379*158598
+./src/components/MUX4x1_32bit.vhd~MUX4x1_32bit=0*183993*184367
+./src/components/MUX4x1_32bit.vhd~MUX4x1_32bit_ARCHMUX4x1_32bit=0*184562*184811
 ./src/components/SL2.vhd~SL2=0*111933*112227
 ./src/components/SL2.vhd~SL2_ARCHSL2=0*148249*148408
 ./src/components/sign_ext.vhd~sign_ext=0*127265*127574
@@ -99,23 +152,31 @@ V=0*114864
 ./src/components/test_benches/sign_ext_TB.vhd~TBsign_ext_TB=0*142503*142993
 ./src/components/test_benches/sign_ext_TB.vhd~sign_ext_TB=0*129720*129951
 ./src/test_benches/ALU_TB.vhd~TBALU_TB=0*110468*111855
-ModifyID=415
+./src/test_benches/MUX4x1_32bit_TB.vhd~MUX4x1_32bit_TB=0*187648*187880
+./src/test_benches/MUX4x1_32bit_TB.vhd~TBMUX4x1_32bit_TB=0*191583*192448
+ModifyID=469
 Version=73
 
 [~MFT]
-0=450|0design0.mgf|167621|121901
-1=102|1design0.mgf|140829|118336
-3=66|3design0.mgf|42804|26759
+0=508|0design0.mgf|192861|124981
+1=112|1design0.mgf|156846|122313
+3=76|3design0.mgf|52313|29565
 
 [~U]
 alu=11|0*50383|0*50622
 alu_tb=ALU_tb 11|0*61744|0*61803
 alucontrol=ALUControl 11|0*159105|0*159316
 alucontrol_tb=ALUControl_tb 11|0*167357|0*167437
+mux2x1_5bit=MUX2x1_5bit 11|0*177987|0*178210
+mux2x1_5bit_tb=MUX2x1_5bit_TB 11|0*180599|0*180682
 mux4x1=MUX4x1 11|0*143522|0*143807
+mux4x1_32bit=MUX4x1_32bit 11|0*184914|0*185217
+mux4x1_32bit_tb=MUX4x1_32bit_TB 11|0*192544|0*192630
 mux4x1_tb=MUX4x1_TB 11|0*148802|0*148870
 sign_ext=11|0*127652|0*127823
 sign_ext_tb=sign_ext_TB 11|0*130048|0*130122
 sl2=SL2 11|0*112621|0*112777
+sl2_jump=SL2_Jump 11|0*169257|0*169428
+sl2_jump_tb=SL2_Jump_TB 11|0*171230|0*171304
 sl2_tb=SL2_TB 11|0*114592|0*114651
 

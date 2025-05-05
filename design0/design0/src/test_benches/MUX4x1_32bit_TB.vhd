@@ -3,12 +3,12 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_signed.all;
 use ieee.numeric_std.all;
 
-entity MUX4x1_TB is
+entity MUX4x1_32bit_TB is
 end entity;
 
-architecture TB of MUX4x1_TB is
+architecture TB of MUX4x1_32bit_TB is
 
-    component MUX4x1 is
+    component MUX4x1_32bit is
         port(
 			A,B,C,D: in std_logic_vector(31 downto 0);
 			sel: in std_logic_vector(1 downto 0);
@@ -22,7 +22,7 @@ architecture TB of MUX4x1_TB is
 
 begin
 
-    c1: MUX4x1 port map (
+    c1: MUX4x1_32bit port map (
         A => A_tb,
     	B => B_tb,
 		C => C_tb,
