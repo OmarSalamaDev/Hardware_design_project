@@ -1,4 +1,4 @@
-timestamp=1746387725547
+timestamp=1746439035590
 
 [alu]
 A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*103508
@@ -13,6 +13,20 @@ B/tb=3*24918
 H/tb=0*120186
 R=./src/ALU_TB.vhd|6
 V=0*62016
+
+[alucontrol]
+A/behavioral=A/Behavioral 21|./src/ALUControl.vhd|14|1*138929
+B/behavioral=3*39998
+H/behavioral=0*161438
+R=./src/ALUControl.vhd|6
+V=0*159889
+
+[alucontrol_tb]
+A/behavioral=A/Behavioral 21|./src/ALUControl_TB.vhd|8|1*140829
+B/behavioral=3*42804
+H/behavioral=0*162480
+R=./src/ALUControl_TB.vhd|4
+V=0*167621
 
 [mux4x1]
 A/mux4x1_arch=A/MUX4x1_ARCH 21|./src/components/MUX4x1.vhd|16|1*137047
@@ -62,6 +76,10 @@ V=0*114864
 [~A]
 ./src/ALU.vhd~ALU=0*49937*50326
 ./src/ALU.vhd~ALU_ARCHALU=0*104540*105133
+./src/ALUControl.vhd~ALUControl=0*158683*159034
+./src/ALUControl.vhd~BehavioralALUControl=0*161533*162171
+./src/ALUControl_TB.vhd~ALUControl_tb=0*162252*162403
+./src/ALUControl_TB.vhd~BehavioralALUControl_tb=0*166109*167270
 ./src/ALU_TB.vhd~ALU_tb=0*56102*56294
 ./src/ALU_TB.vhd~TBALU_TB=0*99817*101191
 ./src/ALU_TB.vhd~TBALU_tb=0*66028*67414
@@ -81,17 +99,19 @@ V=0*114864
 ./src/components/test_benches/sign_ext_TB.vhd~TBsign_ext_TB=0*142503*142993
 ./src/components/test_benches/sign_ext_TB.vhd~sign_ext_TB=0*129720*129951
 ./src/test_benches/ALU_TB.vhd~TBALU_TB=0*110468*111855
-ModifyID=401
+ModifyID=415
 Version=73
 
 [~MFT]
-0=434|0design0.mgf|158598|121901
-1=100|1design0.mgf|137047|118336
-3=64|3design0.mgf|39184|26759
+0=450|0design0.mgf|167621|121901
+1=102|1design0.mgf|140829|118336
+3=66|3design0.mgf|42804|26759
 
 [~U]
 alu=11|0*50383|0*50622
 alu_tb=ALU_tb 11|0*61744|0*61803
+alucontrol=ALUControl 11|0*159105|0*159316
+alucontrol_tb=ALUControl_tb 11|0*167357|0*167437
 mux4x1=MUX4x1 11|0*143522|0*143807
 mux4x1_tb=MUX4x1_TB 11|0*148802|0*148870
 sign_ext=11|0*127652|0*127823

@@ -1,3 +1,5 @@
+.\src\ALUControl.vhd
+.\src\ALUControl_TB.vhd
 .\src\components\MUX4x1.vhd
 .\src\components\sign_ext.vhd
 .\src\components\SL2.vhd

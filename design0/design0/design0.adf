@@ -41,21 +41,13 @@ MaxErrorsKey=100
 CompileWithDebug=1
 OptimizationLevel=2
 
-[Files.Data]
-.\src\components\sign_ext.vhd=VHDL Source Code
-.\src\components\SL2.vhd=VHDL Source Code
-.\src\components\ALU.vhd=VHDL Source Code
-.\src\components\test_benches\sign_ext_TB.vhd=VHDL Source Code
-.\src\components\test_benches\SL2_TB.vhd=VHDL Source Code
-.\src\components\test_benches\ALU_TB.vhd=VHDL Source Code
-.\src\components\test_benches\MUX4x1_TB.vhd=VHDL Source Code
-.\src\components\MUX4x1.vhd=VHDL Source Code
-
 [Groups]
 components=1
 components\test_benches=1
 
 [Files]
+/ALUControl.vhd=-1
+/ALUControl_TB.vhd=-1
 components/MUX4x1.vhd=-1
 components/sign_ext.vhd=-1
 components/SL2.vhd=-1
@@ -64,4 +56,16 @@ components\test_benches/MUX4x1_TB.vhd=-1
 components\test_benches/sign_ext_TB.vhd=-1
 components\test_benches/SL2_TB.vhd=-1
 components\test_benches/ALU_TB.vhd=-1
+
+[Files.Data]
+.\src\ALUControl.vhd=VHDL Source Code
+.\src\ALUControl_TB.vhd=VHDL Source Code
+.\src\components\MUX4x1.vhd=VHDL Source Code
+.\src\components\sign_ext.vhd=VHDL Source Code
+.\src\components\SL2.vhd=VHDL Source Code
+.\src\components\ALU.vhd=VHDL Source Code
+.\src\components\test_benches\MUX4x1_TB.vhd=VHDL Source Code
+.\src\components\test_benches\sign_ext_TB.vhd=VHDL Source Code
+.\src\components\test_benches\SL2_TB.vhd=VHDL Source Code
+.\src\components\test_benches\ALU_TB.vhd=VHDL Source Code
 
