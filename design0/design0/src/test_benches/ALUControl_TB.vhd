@@ -1,82 +1,88 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-entity ALUControl_tb is
--- No ports in testbench
+entity ALUControl_TB is
 end entity;
 
-architecture Behavioral of ALUControl_tb is
+architecture TB of ALUControl_TB is
 
-    -- Component declaration
-    component ALUControl
+    component ALUControl is
         port (
             ALUOp: in  std_logic_vector(1 downto 0);
             funct: in  std_logic_vector(5 downto 0);
-            ALUControl: out std_logic_vector(2 downto 0)
+            control: out std_logic_vector(2 downto 0)
         );
     end component;
 
-    -- Testbench signals
     signal ALUOp_tb: std_logic_vector(1 downto 0);
     signal funct_tb: std_logic_vector(5 downto 0);
-    signal ALUControl_tb: std_logic_vector(2 downto 0);
+    signal control_tb: std_logic_vector(2 downto 0);
 
 begin
 
-    -- Instantiate the unit under test
-    uut: ALUControl
-        port map (
-            ALUOp => ALUOp_tb,
-            funct => funct_tb,
-            ALUControl => ALUControl_tb
-        );
+    c1: ALUControl port map (
+        ALUOp => ALUOp_tb,
+        funct => funct_tb,
+    	control => control_tb
+    );
 
-    -- Stimulus process
-    stim_proc: process
+    process
     begin
-        -- Test ALUOp = "00" (Load/Store)
+        -- LW/SW: ALUOp = 00 ? add
         ALUOp_tb <= "00";
         funct_tb <= "000000"; -- ignored
         wait for 10 ns;
 
-        -- Test ALUOp = "01" (BEQ)
+        -- BEQ: ALUOp = 01 ? sub
         ALUOp_tb <= "01";
         funct_tb <= "000000"; -- ignored
         wait for 10 ns;
 
-        -- R-type instructions (ALUOp = "10") with various funct codes
+        -- R-type tests: ALUOp = 10
         ALUOp_tb <= "10";
-        
-        funct_tb <= "100000"; -- add
-        wait for 10 ns;
-        
-        funct_tb <= "100010"; -- sub
+
+        -- add (funct = 100000)
+        funct_tb <= "100000";
         wait for 10 ns;
 
-        funct_tb <= "100100"; -- and
+        -- sub (funct = 100010)
+        funct_tb <= "100010";
         wait for 10 ns;
 
-        funct_tb <= "100101"; -- or
+        -- and (funct = 100100)
+        funct_tb <= "100100";
         wait for 10 ns;
 
-        funct_tb <= "101010"; -- not
+        -- or (funct = 100101)
+        funct_tb <= "100101";
         wait for 10 ns;
 
-        funct_tb <= "101110"; -- SL
+        -- nor (funct = 100111)
+        funct_tb <= "100111";
         wait for 10 ns;
 
-        funct_tb <= "101011"; -- SR
+        -- slt (funct = 101010)
+        funct_tb <= "101010";
         wait for 10 ns;
 
-        funct_tb <= "111111"; -- invalid
+        -- sll (funct = 000000)
+        funct_tb <= "000000";
         wait for 10 ns;
 
-        -- Test invalid ALUOp
+        -- srl (funct = 000010)
+        funct_tb <= "000010";
+        wait for 10 ns;
+
+        -- Invalid funct
+        funct_tb <= "111111";
+        wait for 10 ns;
+
+        -- Invalid ALUOp
         ALUOp_tb <= "11";
-        funct_tb <= "000000"; -- ignored
+        funct_tb <= "000000";
         wait for 10 ns;
 
-        -- End simulation
         wait;
     end process;
 

@@ -58,9 +58,9 @@ begin
         control_tb <= "011";
         wait for 10 ns;
 
-        -- test not (100)
-        A_tb <= x"AAAAAAAA";
-        B_tb <= x"00000000";  -- B is unused
+        -- test nor (100)
+        A_tb <= x"AA100AAA";
+        B_tb <= x"00A0B011";
         control_tb <= "100";
         wait for 10 ns;
 
@@ -74,6 +74,16 @@ begin
         A_tb <= x"F0000000";
         B_tb <= x"00000000";  -- B is unused
         control_tb <= "110";
+        wait for 10 ns;
+		
+		-- test set_is_less_than (111)
+        A_tb <= x"0F000000";
+        B_tb <= x"01000000";
+        control_tb <= "111";
+        wait for 10 ns;
+        A_tb <= x"01000000";
+        B_tb <= x"0F000000";
+        control_tb <= "111";
         wait for 10 ns;
 
         -- test zero output

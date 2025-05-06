@@ -1,14 +1,16 @@
-469
+595
 ~E 1 "./src/components/MUX4x1_32bit.vhd" 7 mux4x1_32bit
 ~A 1 "./src/components/MUX4x1_32bit.vhd" 16 mux4x1_32bit_arch
-~E 1 "./src/ALUControl_TB.vhd" 4 alucontrol_tb
+~E 1 "./src/test_benches/ALUControl_TB.vhd" 5 alucontrol_tb
+~A 1 "./src/test_benches/ALUControl_TB.vhd" 8 tb
 ~A 1 "./src/ALUControl_TB.vhd" 8 behavioral
 ~E 1 "./src/ALU_TB.vhd" 6 alu_tb
-~A 1 "./src/components/test_benches/ALU_TB.vhd" 9 tb
-~E 1 "./src/ALU.vhd" 19 alu
+~A 1 "./src/test_benches/ALU_TB.vhd" 9 tb
+~E 1 "./src/components/ALU.vhd" 19 alu
 ~A 1 "./src/components/ALU.vhd" 30 alu_arch
-~E 1 "./src/ALUControl.vhd" 6 alucontrol
-~A 1 "./src/components/ALUControl.vhd" 14 behavioral
+~E 1 "./src/components/ALUControl.vhd" 19 alucontrol
+~A 1 "./src/components/ALUControl.vhd" 27 behavioral
+~A 1 "./src/components/ALUControl.vhd" 27 alucontrol_arch
 ~E 1 "./src/MUX2x1_5bit_TB.vhd" 6 mux2x1_5bit_tb
 ~A 1 "./src/MUX2x1_5bit_TB.vhd" 9 tb
 ~E 1 "./src/MUX2x1_5bit.vhd" 7 mux2x1_5bit

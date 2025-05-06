@@ -28,7 +28,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=alucontrol_tb|behavioral|0 mux2x1_5bit_tb|tb|0 mux4x1_32bit_tb|tb|0 sl2|sign_ext_arch|0 sl2_jump_tb|tb|0 
+HierarchyInformation=mux4x1_32bit_tb|tb|0
 ShowHide=ShowTopLevel
 Selected=
 
