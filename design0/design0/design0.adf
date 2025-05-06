@@ -26,14 +26,38 @@ FLOWTOOLS=ONLY_IMPL
 [IMPLEMENTATION]
 UCF=
 
-[Files]
-/mux4x4.vhd=-1
-
-[Files.Data]
-.\src\mux4x4.vhd=VHDL Source Code
-
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=mux4x1_32bit_tb|tb|0
 ShowHide=ShowTopLevel
 Selected=
+
+[LocalVhdlSets]
+ReorderOnFirstRebuild=1
+EnableVHDL87Key=1
+NetlistCompilation=0
+ElaborationAfterCompilation=0
+MaxErrorsKey=100
+CompileWithDebug=1
+OptimizationLevel=2
+
+[Files.Data]
+.\src\ALUControl.vhd=VHDL Source Code
+.\src\MUX4x1_32bit.vhd=VHDL Source Code
+.\src\sign_ext.vhd=VHDL Source Code
+.\src\SL2.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\MUX2x1_5bit.vhd=VHDL Source Code
+.\src\SL2_Jump .vhd=VHDL Source Code
+
+[Groups]
+
+[Files]
+/ALUControl.vhd=-1
+/MUX4x1_32bit.vhd=-1
+/sign_ext.vhd=-1
+/SL2.vhd=-1
+/ALU.vhd=-1
+/MUX2x1_5bit.vhd=-1
+/SL2_Jump .vhd=-1
+

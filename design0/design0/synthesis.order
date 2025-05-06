@@ -1,1 +1,13 @@
 i<>.\src\mux4x4.vhd
+i<>.\src\SLU.vhd
+i<>.\src\SLU_TB.vhd
+i<>.\src\sign_ext.vhd
+i<>.\src\sign_ext_TB.vhd
+i<>.\src\MUX4x1.vhd
+i<>.\src\MUX4x1_TB.vhd
+i<>.\src\ALU_CTRL.vhd
+i<>.\src\ALU_CTRL_TB.vhd
+i<>.\src\SL2_Jump .vhd
+i<>.\src\SL2_Jump_TB .vhd
+i<>.\src\MUX2x1_5bit.vhd
+i<>.\src\MUX2x1_5bit_TB.vhd

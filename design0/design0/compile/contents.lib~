@@ -1,1 +1,33 @@
-0
+601
+~E 1 "./src/components/MUX4x1_32bit.vhd" 7 mux4x1_32bit
+~A 1 "./src/components/MUX4x1_32bit.vhd" 16 mux4x1_32bit_arch
+~E 1 "./src/test_benches/ALUControl_TB.vhd" 5 alucontrol_tb
+~E 1 "./src/ALU_TB.vhd" 6 alu_tb
+~A 1 "./src/test_benches/ALU_TB.vhd" 9 tb
+~E 1 "./src/components/ALU.vhd" 19 alu
+~A 1 "./src/components/ALU.vhd" 30 alu_arch
+~E 1 "./src/components/ALUControl.vhd" 19 alucontrol
+~A 1 "./src/components/ALUControl.vhd" 27 behavioral
+~A 1 "./src/components/ALUControl.vhd" 27 alucontrol_arch
+~E 1 "./src/MUX2x1_5bit_TB.vhd" 6 mux2x1_5bit_tb
+~A 1 "./src/MUX2x1_5bit_TB.vhd" 9 tb
+~E 1 "./src/MUX2x1_5bit.vhd" 7 mux2x1_5bit
+~A 1 "./src/MUX2x1_5bit.vhd" 16 mux2x1_5bit_arch
+~E 1 "./src/components/MUX4x1.vhd" 11 mux4x1
+~A 1 "./src/components/MUX4x1.vhd" 16 mux4x1_arch
+~E 1 "./src/components/test_benches/sign_ext_TB.vhd" 6 sign_ext_tb
+~A 1 "./src/components/test_benches/sign_ext_TB.vhd" 9 tb
+~E 1 "./src/components/test_benches/MUX4x1_TB.vhd" 6 mux4x1_tb
+~A 1 "./src/components/test_benches/MUX4x1_TB.vhd" 9 tb
+~E 1 "./src/test_benches/MUX4x1_32bit_TB.vhd" 6 mux4x1_32bit_tb
+~E 1 "./src/components/sign_ext.vhd" 7 sign_ext
+~A 1 "./src/components/sign_ext.vhd" 15 sign_ext_arch
+~E 1 "./src/SL2_Jump .vhd" 11 sl2_jump
+~A 1 "./src/SL2_Jump .vhd" 19 sl2_jump_arch
+~E 1 "./src/components/SL2.vhd" 10 sl2
+~A 1 "./src/components/SL2.vhd" 19 sl2_arch
+~A 1 "./src/components/sign_ext.vhd" 15 sign_ext_arch
+~E 1 "./src/SL2_Jump_TB .vhd" 6 sl2_jump_tb
+~A 1 "./src/SL2_Jump_TB .vhd" 9 tb
+~E 1 "./src/components/test_benches/SL2_TB.vhd" 6 sl2_tb
+~A 1 "./src/components/test_benches/SL2_TB.vhd" 9 tb

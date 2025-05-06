@@ -1,0 +1,17 @@
+elbread.dll ver. 1.0.5.365 Tue May 06 23:16:17 2025
+
+
+------------------------------------------
+Entity         | Architecture    | Library
+------------------------------------------
+alucontrol_tb  | tb              | design0
+alucontrol     | alucontrol_arch | design0
+------------------------------------------
+
+-------------------------
+Package         | Library
+-------------------------
+standard        | std
+std_logic_1164  | ieee
+numeric_std     | ieee
+-------------------------

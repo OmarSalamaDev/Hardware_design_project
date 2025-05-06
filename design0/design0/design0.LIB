@@ -1,0 +1,186 @@
+timestamp=1746566178941
+
+[alu]
+A/alu_arch=A/ALU_ARCH 21|./src/components/ALU.vhd|30|1*170830
+B/alu_arch=3*61665
+H/alu_arch=0*207729
+R=./src/components/ALU.vhd|19
+V=0*199213
+
+[alu_tb]
+A/tb=A/TB 21|./src/test_benches/ALU_TB.vhd|9|1*180321
+B/tb=3*69275
+H/tb=0*215642
+R=./src/ALU_TB.vhd|6
+V=0*62016
+
+[alucontrol]
+A/alucontrol_arch=A/ALUControl_ARCH 21|./src/components/ALUControl.vhd|27|1*197850
+A/behavioral=A/Behavioral +21|./src/components/ALUControl.vhd|27|1*173893
+B/alucontrol_arch=3*84836
+H/alucontrol_arch=0*242738
+R=./src/components/ALUControl.vhd|19
+V=0*244368
+
+[alucontrol_tb]
+B/tb=3*87851
+H/tb=0*245928
+R=./src/test_benches/ALUControl_TB.vhd|5
+V=0*221797
+
+[mux2x1_5bit]
+A/mux2x1_5bit_arch=A/MUX2x1_5bit_ARCH 21|./src/MUX2x1_5bit.vhd|16|1*151072
+B/mux2x1_5bit_arch=3*50085
+H/mux2x1_5bit_arch=0*179933
+R=./src/MUX2x1_5bit.vhd|7
+V=0*178705
+
+[mux2x1_5bit_tb]
+A/tb=A/TB 21|./src/MUX2x1_5bit_TB.vhd|9|1*152602
+B/tb=3*50568
+H/tb=0*181003
+R=./src/MUX2x1_5bit_TB.vhd|6
+V=0*180911
+
+[mux4x1]
+A/mux4x1_arch=A/MUX4x1_ARCH 21|./src/components/MUX4x1.vhd|16|1*137047
+B/mux4x1_arch=3*39184
+H/mux4x1_arch=0*158282
+R=./src/components/MUX4x1.vhd|11
+V=0*144438
+
+[mux4x1_32bit]
+A/mux4x1_32bit_arch=A/MUX4x1_32bit_ARCH 21|./src/components/MUX4x1_32bit.vhd|16|1*154940
+B/mux4x1_32bit_arch=3*51493
+H/mux4x1_32bit_arch=0*184453
+R=./src/components/MUX4x1_32bit.vhd|7
+V=0*185855
+
+[mux4x1_32bit_tb]
+B/tb=3*52313
+H/tb=0*187974
+R=./src/test_benches/MUX4x1_32bit_TB.vhd|6
+V=0*192861
+
+[mux4x1_tb]
+A/tb=A/TB 21|./src/components/test_benches/MUX4x1_TB.vhd|9|1*133720
+B/tb=3*37442
+H/tb=0*153744
+R=./src/components/test_benches/MUX4x1_TB.vhd|6
+V=0*149089
+
+[sign_ext]
+A/sign_ext_arch=A/sign_ext_ARCH 21|./src/components/sign_ext.vhd|15|1*113490
+B/sign_ext_arch=3*34628
+H/sign_ext_arch=0*136579
+R=./src/components/sign_ext.vhd|7
+V=0*128277
+
+[sign_ext_tb]
+A/tb=A/TB 21|./src/components/test_benches/sign_ext_TB.vhd|9|1*116969
+B/tb=3*35264
+H/tb=0*140028
+R=./src/components/test_benches/sign_ext_TB.vhd|6
+V=0*130345
+
+[sl2]
+A/sign_ext_arch=A/sign_ext_ARCH 21|./src/components/sign_ext.vhd|15|1*107864
+A/sl2_arch=A/SL2_ARCH 21|./src/components/SL2.vhd|19|1*128882
+B/sign_ext_arch=3*33283
+B/sl2_arch=3*36895
+H/sign_ext_arch=0*129350
+H/sl2_arch=0*148158
+R=./src/components/SL2.vhd|10
+V=0*113226
+
+[sl2_jump]
+A/sl2_jump_arch=A/SL2_Jump_ARCH 21|./src/SL2_Jump .vhd|19|1*145536
+B/sl2_jump_arch=3*49208
+H/sl2_jump_arch=0*168914
+R=./src/SL2_Jump .vhd|11
+V=0*169885
+
+[sl2_jump_tb]
+A/tb=A/TB 21|./src/SL2_Jump_TB .vhd|9|1*148995
+B/tb=3*49760
+H/tb=0*174599
+R=./src/SL2_Jump_TB .vhd|6
+V=0*171527
+
+[sl2_tb]
+A/tb=A/TB 21|./src/components/test_benches/SL2_TB.vhd|9|1*97347
+B/tb=3*24581
+H/tb=0*117739
+R=./src/components/test_benches/SL2_TB.vhd|6
+V=0*114864
+
+[~A]
+./src/ALU.vhd~ALU=0*49937*50326
+./src/ALU.vhd~ALU_ARCHALU=0*104540*105133
+./src/ALUControl.vhd~ALUControl=0*158683*159034
+./src/ALUControl.vhd~BehavioralALUControl=0*161533*162171
+./src/ALUControl_TB.vhd~ALUControl_tb=0*162252*162403
+./src/ALUControl_TB.vhd~BehavioralALUControl_tb=0*166109*167270
+./src/ALU_TB.vhd~ALU_tb=0*56102*56294
+./src/ALU_TB.vhd~TBALU_TB=0*99817*101191
+./src/ALU_TB.vhd~TBALU_tb=0*66028*67414
+./src/MUX2x1_5bit.vhd~MUX2x1_5bit=0*177584*177914
+./src/MUX2x1_5bit.vhd~MUX2x1_5bit_ARCHMUX2x1_5bit=0*180040*180215
+./src/MUX2x1_5bit_TB.vhd~MUX2x1_5bit_TB=0*180304*180520
+./src/MUX2x1_5bit_TB.vhd~TBMUX2x1_5bit_TB=0*183311*183912
+./src/SL2_Jump .vhd~SL2_Jump=0*168547*168846
+./src/SL2_Jump .vhd~SL2_Jump_ARCHSL2_Jump=0*169015*169176
+./src/SL2_Jump_TB .vhd~SL2_Jump_TB=0*170948*171156
+./src/SL2_Jump_TB .vhd~TBSL2_Jump_TB=0*177074*177508
+./src/components/ALU.vhd~ALU=0*196463*196863
+./src/components/ALU.vhd~ALU_ARCHALU=0*208383*209096
+./src/components/ALUControl.vhd~ALUControl=0*242330*242656
+./src/components/ALUControl.vhd~ALUControl_ARCHALUControl=0*242843*243511
+./src/components/ALUControl.vhd~BehavioralALUControl=0*209267*209961
+./src/components/MUX4x1.vhd~MUX4x1=0*143092*143448
+./src/components/MUX4x1.vhd~MUX4x1_ARCHMUX4x1=0*158379*158598
+./src/components/MUX4x1_32bit.vhd~MUX4x1_32bit=0*183993*184367
+./src/components/MUX4x1_32bit.vhd~MUX4x1_32bit_ARCHMUX4x1_32bit=0*184562*184811
+./src/components/SL2.vhd~SL2=0*111933*112227
+./src/components/SL2.vhd~SL2_ARCHSL2=0*148249*148408
+./src/components/sign_ext.vhd~sign_ext=0*127265*127574
+./src/components/sign_ext.vhd~sign_ext_ARCHSL2=0*129451*129634
+./src/components/sign_ext.vhd~sign_ext_ARCHsign_ext=0*136680*136873
+./src/components/test_benches/ALU_TB.vhd~TBALU_TB=0*124121*125516
+./src/components/test_benches/MUX4x1_TB.vhd~MUX4x1_TB=0*148484*148709
+./src/components/test_benches/MUX4x1_TB.vhd~TBMUX4x1_TB=0*157341*158187
+./src/components/test_benches/SL2_TB.vhd~SL2_TB=0*114289*114505
+./src/components/test_benches/SL2_TB.vhd~TBSL2_TB=0*119718*120097
+./src/components/test_benches/sign_ext_TB.vhd~TBsign_ext_TB=0*142503*142993
+./src/components/test_benches/sign_ext_TB.vhd~sign_ext_TB=0*129720*129951
+./src/test_benches/ALUControl_TB.vhd~ALUControl_tb=0*221231*221424
+./src/test_benches/ALUControl_TB.vhd~TBALUControl_TB=0*249534*250708
+./src/test_benches/ALU_TB.vhd~TBALU_TB=0*219577*221153
+./src/test_benches/MUX4x1_32bit_TB.vhd~MUX4x1_32bit_TB=0*187648*187880
+./src/test_benches/MUX4x1_32bit_TB.vhd~TBMUX4x1_32bit_TB=0*191583*192448
+ModifyID=601
+Version=73
+
+[~MFT]
+0=638|0design0.mgf|250708|179263
+1=143|1design0.mgf||165582
+3=106|3design0.mgf|87851|65106
+
+[~U]
+alu=11|0*198262|0*198501
+alu_tb=ALU_tb 11|0*61744|0*61803
+alucontrol=11|0*243608|0*243816
+alucontrol_tb=11|0*221514|0*221594
+mux2x1_5bit=MUX2x1_5bit 11|0*177987|0*178210
+mux2x1_5bit_tb=MUX2x1_5bit_TB 11|0*180599|0*180682
+mux4x1=MUX4x1 11|0*143522|0*143807
+mux4x1_32bit=MUX4x1_32bit 11|0*184914|0*185217
+mux4x1_32bit_tb=MUX4x1_32bit_TB 11|0*192544|0*192630
+mux4x1_tb=MUX4x1_TB 11|0*148802|0*148870
+sign_ext=11|0*127652|0*127823
+sign_ext_tb=sign_ext_TB 11|0*130048|0*130122
+sl2=SL2 11|0*112621|0*112777
+sl2_jump=SL2_Jump 11|0*169257|0*169428
+sl2_jump_tb=SL2_Jump_TB 11|0*171230|0*171304
+sl2_tb=SL2_TB 11|0*114592|0*114651
+
