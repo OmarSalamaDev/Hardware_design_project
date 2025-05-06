@@ -1,14 +1,7 @@
-.\src\components\MUX2x1_5bit.vhd
-.\src\components\SL2_Jump .vhd
-.\src\components\ALUControl.vhd
-.\src\components\MUX4x1_32bit.vhd
-.\src\components\sign_ext.vhd
-.\src\components\SL2.vhd
-.\src\components\ALU.vhd
-.\src\test_benches\MUX2x1_5bit_TB.vhd
-.\src\test_benches\SL2_Jump_TB .vhd
-.\src\test_benches\ALUControl_TB.vhd
-.\src\test_benches\MUX4x1_32bit_TB.vhd
-.\src\test_benches\sign_ext_TB.vhd
-.\src\test_benches\SL2_TB.vhd
-.\src\test_benches\ALU_TB.vhd
+.\src\ALUControl.vhd
+.\src\MUX4x1_32bit.vhd
+.\src\sign_ext.vhd
+.\src\SL2.vhd
+.\src\ALU.vhd
+.\src\MUX2x1_5bit.vhd
+.\src\SL2_Jump .vhd

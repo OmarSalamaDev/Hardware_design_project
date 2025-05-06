@@ -2818,7 +2818,7 @@ I 000051 55 1849          1746438766957 Behavioral
   (_model . Behavioral 1 -1
   )
 )
-V 000051 55 2721          1746439035489 Behavioral
+I 000051 55 2721          1746439035489 Behavioral
 (_unit VHDL (alucontrol_tb 0 4 (behavioral 0 8 ))
   (_version v33)
   (_time 1746439035488 2025.05.05 12:57:15)
@@ -3199,7 +3199,7 @@ V 000058 55 1848          1746483797146 MUX4x1_32bit_ARCH
   (_model . MUX4x1_32bit_ARCH 1 -1
   )
 )
-V 000043 55 3303          1746483839225 TB
+I 000043 55 3303          1746483839225 TB
 (_unit VHDL (mux4x1_32bit_tb 0 6 (tb 0 9 ))
   (_version v33)
   (_time 1746483839224 2025.05.06 01:23:59)
@@ -4159,75 +4159,5 @@ V 000056 55 1882          1746562496072 ALUControl_ARCH
     (3 3 3 )
   )
   (_model . ALUControl_ARCH 1 -1
-  )
-)
-V 000043 55 2743          1746562501958 TB
-(_unit VHDL (alucontrol_tb 0 5 (tb 0 8 ))
-  (_version v33)
-  (_time 1746562501957 2025.05.06 23:15:01)
-  (_source (\./src/test_benches/ALUControl_TB.vhd\))
-  (_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164)))
-  (_parameters dbg )
-  (_entity
-    (_time 1746519980223)
-    (_use )
-  )
-  (_component
-    (ALUControl
-      (_object
-        (_port (_internal ALUOp ~std_logic_vector{1~downto~0}~13 0 12 (_entity (_in ))))
-        (_port (_internal funct ~std_logic_vector{5~downto~0}~13 0 13 (_entity (_in ))))
-        (_port (_internal control ~std_logic_vector{2~downto~0}~13 0 14 (_entity (_out ))))
-      )
-    )
-  )
-  (_instantiation c1 0 24 (_component ALUControl )
-    (_port
-      ((ALUOp)(ALUOp_tb))
-      ((funct)(funct_tb))
-      ((control)(control_tb))
-    )
-    (_use (_entity . alucontrol)
-    )
-  )
-  (_object
-    (_type (_internal ~std_logic_vector{1~downto~0}~13 0 12 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 1)(i 0))))))
-    (_type (_internal ~std_logic_vector{5~downto~0}~13 0 13 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 5)(i 0))))))
-    (_type (_internal ~std_logic_vector{2~downto~0}~13 0 14 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 2)(i 0))))))
-    (_type (_internal ~std_logic_vector{1~downto~0}~132 0 18 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 1)(i 0))))))
-    (_signal (_internal ALUOp_tb ~std_logic_vector{1~downto~0}~132 0 18 (_architecture (_uni ))))
-    (_type (_internal ~std_logic_vector{5~downto~0}~134 0 19 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 5)(i 0))))))
-    (_signal (_internal funct_tb ~std_logic_vector{5~downto~0}~134 0 19 (_architecture (_uni ))))
-    (_type (_internal ~std_logic_vector{2~downto~0}~136 0 20 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 2)(i 0))))))
-    (_signal (_internal control_tb ~std_logic_vector{2~downto~0}~136 0 20 (_architecture (_uni ))))
-    (_process
-      (line__30(_architecture 0 0 30 (_process (_wait_for)(_target(0)(1)))))
-    )
-    (_subprogram
-      (_external resolved (ieee std_logic_1164 0))
-    )
-    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
-    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
-    (_type (_external ~extieee.std_logic_1164.std_logic_vector (ieee std_logic_1164 std_logic_vector)))
-  )
-  (_static
-    (2 2 )
-    (2 2 2 2 2 2 )
-    (2 3 )
-    (2 2 2 2 2 2 )
-    (3 2 )
-    (3 2 2 2 2 2 )
-    (3 2 2 2 3 2 )
-    (3 2 2 3 2 2 )
-    (3 2 2 3 2 3 )
-    (3 2 2 3 3 3 )
-    (3 2 3 2 3 2 )
-    (2 2 2 2 2 2 )
-    (2 2 2 2 3 2 )
-    (3 3 3 3 3 3 )
-    (3 3 )
-    (2 2 2 2 2 2 )
-  )
-  (_model . TB 1 -1
   )
 )
