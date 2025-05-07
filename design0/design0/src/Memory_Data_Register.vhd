@@ -6,9 +6,9 @@ use ieee.numeric_std.ALL;
 entity MDR is
 
 	Port (			  
-	clk : in STD_LOGIC;
-	data_in : in STD_LOGIC_VECTOR(31 downto 0);
-	read  : in STD_LOGIC;	
+	clk : in STD_LOGIC;	   
+	reset  : in STD_LOGIC;	
+	data_in : in STD_LOGIC_VECTOR(31 downto 0);	
 	data_out  : out STD_LOGIC_VECTOR(31 downto 0)
 	);
 
@@ -21,7 +21,7 @@ begin
 	process(clk) is	
 	begin			  
 		if rising_edge(clk) then  
-			if read = '1' then	  
+			if reset = '1' then	  
 				data_out <= data_in;
 			end if;				   
 		end if;					  

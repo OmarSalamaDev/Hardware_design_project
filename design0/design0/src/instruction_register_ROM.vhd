@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.ALL;
 use ieee.numeric_std.ALL;
 
-entity Inst_Mem	is
+entity instruction_register	is
 	port(
 	clk:in STD_LOGIC;
 	reset: in std_logic;

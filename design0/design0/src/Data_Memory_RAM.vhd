@@ -4,7 +4,8 @@ use ieee.numeric_std.ALL;
 
 entity Data_Mem is
 	port(
-	clk : in STD_LOGIC;
+	clk : in STD_LOGIC;	
+	reset : in STD_LOGIC;
 	address : in STD_LOGIC_VECTOR(31 downto 0);
 	read : in STD_LOGIC;
 	write : in STD_LOGIC;	  
@@ -46,27 +47,57 @@ architecture Behavioral of Data_Mem is
 		18 => x"00",
 		19 => x"03",
 		
-  others => (others => '0'));
+  others => (others => '0')); 
+  
+  signal data_out_reg : std_logic_vector(31 downto 0):= (others => '0');
 
 begin 
 	
-	process (clk)
+	process (clk) is
+    
 	begin
+        
 		if rising_edge(clk) then
-			if write = '1' then 
-				ram(to_integer(unsigned(address)))     <= data_write(31 downto 24);
-				ram(to_integer(unsigned(address) + 1)) <= data_write(23 downto 16);
-				ram(to_integer(unsigned(address) + 2)) <= data_write(15 downto 8);
-				ram(to_integer(unsigned(address) + 3)) <= data_write(7 downto 0);
-			end if;
-		end if;
-	end process;  
+            
+			if reset = '1' then
+               
+				data_out_reg <= (others => '0');
+            
+			else
+               
+				if write = '1' then 
+                    
+					ram(to_integer(unsigned(address))) <= data_write(31 downto 24);
+                    
+					ram(to_integer(unsigned(address) + 1)) <= data_write(23 downto 16);
+                    
+					ram(to_integer(unsigned(address) + 2)) <= data_write(15 downto 8);
+                    
+					ram(to_integer(unsigned(address) + 3)) <= data_write(7 downto 0);
+                
+				end if;
 
-	-- combinational read 
-	data_read <= ram(to_integer(unsigned(address)))     &
-				 ram(to_integer(unsigned(address) + 1)) &
-				 ram(to_integer(unsigned(address) + 2)) &
-				 ram(to_integer(unsigned(address) + 3)) when read = '1' else 
-	             (others => 'Z');
+               
+			if read = '1' then
+                    
+				data_out_reg <= ram(to_integer(unsigned(address)))     &
+                                    
+								ram(to_integer(unsigned(address) + 1)) &
+                                   
+								ram(to_integer(unsigned(address) + 2)) &
+                                    
+								ram(to_integer(unsigned(address) + 3));
+                
+			end if;
+            
+			end if;
+        
+		end if;
+    
+	end process;
+
+    
+	data_read <= data_out_reg;
+
 
 end architecture;
