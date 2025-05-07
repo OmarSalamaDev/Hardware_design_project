@@ -29,14 +29,16 @@
    signal ctrl_state: std_logic_vector(15 downto 0):=(others =>'0');
    
    begin
-	   process(CLK,Reset,Op)
-	   begin
-		   if Reset = '1' then
-			   current_state <= FETCH;
-		   elsif rising_edge(CLK) then
-			   current_state <= next_state;
-		   end if;
-		   
+    process(CLK)
+             begin
+             if rising_edge(CLK) then
+              if Reset = '1' then
+               current_state <= FETCH;
+              else
+               current_state <= next_state;
+              end if;
+           end if;
+    end process;
 		   case current_state is
 			   when FETCH => next_state <= ID; 
 			   when ID =>
