@@ -38,7 +38,6 @@
                current_state <= next_state;
               end if;
            end if;
-    end process;
 		   case current_state is
 			   when FETCH => next_state <= ID; 
 			   when ID =>
