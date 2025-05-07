@@ -11,3 +11,5 @@ i<>.\src\SL2_Jump .vhd
 i<>.\src\SL2_Jump_TB .vhd
 i<>.\src\MUX2x1_5bit.vhd
 i<>.\src\MUX2x1_5bit_TB.vhd
+i<>.\src\MUX3x1_32bit.vhd
+i<>.\src\MUX2x1_32bit.vhd

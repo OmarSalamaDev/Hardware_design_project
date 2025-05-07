@@ -5,3 +5,5 @@
 .\src\ALU.vhd
 .\src\MUX2x1_5bit.vhd
 .\src\SL2_Jump .vhd
+.\src\MUX3x1_32bit.vhd
+.\src\MUX2x1_32bit.vhd

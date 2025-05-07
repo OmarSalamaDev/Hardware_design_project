@@ -1,5 +1,4 @@
-MESSAGE "File: C:\Data\code\Hardwere_design_project\design0\design0\src\test_benches\ALUControl_TB.vhd" 
-MESSAGE "Compile Entity "ALUControl_TB"" 
-MESSAGE "Entity `ALUControl_TB' has been skipped - no difference detected." 
-MESSAGE "Compile Architecture "TB" of Entity "ALUControl_TB"" 
+MESSAGE "File: C:\Data\code\Hardwere_design_project\design0\design0\src\MUX2x1_32bit.vhd" 
+MESSAGE "Compile Entity "MUX2x1_32bit"" 
+MESSAGE "Compile Architecture "MUX2x1_32bit_ARCH" of Entity "MUX2x1_32bit"" 
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

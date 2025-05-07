@@ -28,7 +28,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=mux4x1_32bit_tb|tb|0
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
@@ -41,15 +41,6 @@ MaxErrorsKey=100
 CompileWithDebug=1
 OptimizationLevel=2
 
-[Files.Data]
-.\src\ALUControl.vhd=VHDL Source Code
-.\src\MUX4x1_32bit.vhd=VHDL Source Code
-.\src\sign_ext.vhd=VHDL Source Code
-.\src\SL2.vhd=VHDL Source Code
-.\src\ALU.vhd=VHDL Source Code
-.\src\MUX2x1_5bit.vhd=VHDL Source Code
-.\src\SL2_Jump .vhd=VHDL Source Code
-
 [Groups]
 
 [Files]
@@ -60,4 +51,17 @@ OptimizationLevel=2
 /ALU.vhd=-1
 /MUX2x1_5bit.vhd=-1
 /SL2_Jump .vhd=-1
+/MUX3x1_32bit.vhd=-1
+/MUX2x1_32bit.vhd=-1
+
+[Files.Data]
+.\src\ALUControl.vhd=VHDL Source Code
+.\src\MUX4x1_32bit.vhd=VHDL Source Code
+.\src\sign_ext.vhd=VHDL Source Code
+.\src\SL2.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\MUX2x1_5bit.vhd=VHDL Source Code
+.\src\SL2_Jump .vhd=VHDL Source Code
+.\src\MUX3x1_32bit.vhd=VHDL Source Code
+.\src\MUX2x1_32bit.vhd=VHDL Source Code
 

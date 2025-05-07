@@ -4161,3 +4161,71 @@ V 000056 55 1882          1746562496072 ALUControl_ARCH
   (_model . ALUControl_ARCH 1 -1
   )
 )
+V 000058 55 1739          1746635870549 MUX3x1_32bit_ARCH
+(_unit VHDL (mux3x1_32bit 0 7 (mux3x1_32bit_arch 0 16 ))
+  (_version v33)
+  (_time 1746635870550 2025.05.07 19:37:50)
+  (_source (\./src/MUX3x1_32bit.vhd\))
+  (_use (std(standard))(ieee(numeric_std))(ieee(std_logic_signed))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1746635870534)
+    (_use )
+  )
+  (_object
+    (_type (_internal ~std_logic_vector{31~downto~0}~124 0 9 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_port (_internal A ~std_logic_vector{31~downto~0}~124 0 9 (_entity (_in ))))
+    (_port (_internal B ~std_logic_vector{31~downto~0}~124 0 9 (_entity (_in ))))
+    (_port (_internal C ~std_logic_vector{31~downto~0}~124 0 9 (_entity (_in ))))
+    (_type (_internal ~std_logic_vector{1~downto~0}~12 0 10 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 1)(i 0))))))
+    (_port (_internal sel ~std_logic_vector{1~downto~0}~12 0 10 (_entity (_in ))))
+    (_type (_internal ~std_logic_vector{31~downto~0}~126 0 11 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_port (_internal num_out ~std_logic_vector{31~downto~0}~126 0 11 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(4))(_sensitivity(0)(3)(1)(2)))))
+    )
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+    (_type (_external ~extieee.std_logic_1164.std_logic_vector (ieee std_logic_1164 std_logic_vector)))
+  )
+  (_static
+    (2 2 )
+    (2 3 )
+  )
+  (_model . MUX3x1_32bit_ARCH 1 -1
+  )
+)
+V 000058 55 1484          1746635921184 MUX2x1_32bit_ARCH
+(_unit VHDL (mux2x1_32bit 0 7 (mux2x1_32bit_arch 0 16 ))
+  (_version v33)
+  (_time 1746635921183 2025.05.07 19:38:41)
+  (_source (\./src/MUX2x1_32bit.vhd\))
+  (_use (std(standard))(ieee(numeric_std))(ieee(std_logic_signed))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_entity
+    (_time 1746635921174)
+    (_use )
+  )
+  (_object
+    (_type (_internal ~std_logic_vector{31~downto~0}~122 0 9 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_port (_internal A ~std_logic_vector{31~downto~0}~122 0 9 (_entity (_in ))))
+    (_port (_internal B ~std_logic_vector{31~downto~0}~122 0 9 (_entity (_in ))))
+    (_port (_internal sel ~extieee.std_logic_1164.std_logic 0 10 (_entity (_in ))))
+    (_type (_internal ~std_logic_vector{31~downto~0}~124 0 11 (_array ~extieee.std_logic_1164.std_logic ((_downto (i 31)(i 0))))))
+    (_port (_internal num_out ~std_logic_vector{31~downto~0}~124 0 11 (_entity (_out ))))
+    (_process
+      (line__18(_architecture 0 0 18 (_assignment (_simple)(_target(3))(_sensitivity(0)(1)(2)))))
+    )
+    (_subprogram
+      (_external resolved (ieee std_logic_1164 0))
+    )
+    (_type (_external ~extieee.std_logic_1164.std_logic (ieee std_logic_1164 std_logic)))
+    (_type (_external ~extieee.std_logic_1164.std_ulogic (ieee std_logic_1164 std_ulogic)))
+    (_type (_external ~extieee.std_logic_1164.std_logic_vector (ieee std_logic_1164 std_logic_vector)))
+  )
+  (_model . MUX2x1_32bit_ARCH 1 -1
+  )
+)
