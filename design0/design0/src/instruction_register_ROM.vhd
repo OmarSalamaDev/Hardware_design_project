@@ -12,7 +12,7 @@ entity instruction_register	is
 	);
 end entity;
 
-architecture Behavioral of Inst_Mem is 
+architecture Behavioral of instruction_register is 
 	signal internal_instruction: std_logic_vector(31 downto 0);
 
 begin
