@@ -7,13 +7,13 @@ entity instruction_register	is
 	clk:in STD_LOGIC;
 	reset: in std_logic;
 	IRWrite:in STD_LOGIC;
-	address :in std_logic_vector(31 downto 0);
-	instruction :out std_logic_vector(31 downto 0)
+	inst_in :in std_logic_vector(31 downto 0);
+	inst_out :out std_logic_vector(31 downto 0)
 	);
 end entity;
 
 architecture Behavioral of instruction_register is 
-	signal internal_instruction: std_logic_vector(31 downto 0);
+	signal internal_instruction: std_logic_vector(31 downto 0):= (others => '0');
 
 begin
 	--synchronous process
@@ -21,12 +21,12 @@ begin
 	begin
 		if rising_edge(clk) then
 			if reset = '1' then
-				instruction <= (others => '0');
+				internal_instruction <= (others => '0');
 			elsif IRWrite = '1' then
-				internal_instruction <= address;
+				internal_instruction <= inst_in;
 				
 			end if;	
 		end if;	
 	end process; 		   
-	instruction <= internal_instruction;
+	inst_out <= internal_instruction;
 end architecture;

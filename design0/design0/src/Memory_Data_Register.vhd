@@ -17,13 +17,31 @@ end entity;
 
 architecture Behavioral of MDR is
 
+signal internal_data_out  :  STD_LOGIC_VECTOR(31 downto 0):= (others => '0');
+
 begin					  
+	
 	process(clk) is	
+	
 	begin			  
+		
 		if rising_edge(clk) then  
-			if reset = '1' then	  
-				data_out <= data_in;
+			
+			if reset = '1' then
+  
+				internal_data_out <= (others => '0');
+
+			else
+    
+				internal_data_out <= data_in;
+
+			
 			end if;				   
+		
 		end if;					  
-	end process;			  
+	
+	end process;
+	
+	data_out <= internal_data_out;
+
 end architecture;
