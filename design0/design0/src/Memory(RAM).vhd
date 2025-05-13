@@ -45,7 +45,7 @@ architecture Behavioral of Memory is
     -- $5 = $6 AND $7
     40 => "00000000",
     41 => "11000111",
-    42 => "00101000", -- Chat ebn el5aol
+    42 => "00101000",
     43 => "00100100",
 
     -- or $8, $9, $10    (opcode: 0x012A4025)
