@@ -26,14 +26,49 @@ FLOWTOOLS=ONLY_IMPL
 [IMPLEMENTATION]
 UCF=
 
-[Files]
-/mux4x4.vhd=-1
-
-[Files.Data]
-.\src\mux4x4.vhd=VHDL Source Code
-
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=testbench|sim|0 
 ShowHide=ShowTopLevel
 Selected=
+
+[Files]
+/InstructionRegister.vhd=-1
+/Memory(RAM).vhd=-1
+/Memory_Data_register.vhd=-1
+/MUX2x1_5bit.vhd=-1
+/MUX2x1_32bit.vhd=-1
+/MUX3x1_32bit.vhd=-1
+/MUX4x1_32bit.vhd=-1
+/Program_Counter.vhd=-1
+/Registers_File.vhd=-1
+/Sign_ext.vhd=-1
+/SL2.vhd=-1
+/SL2_Jump.vhd=-1
+/TempRegisters.vhd=-1
+/TestBench.vhd=-1
+/Top_Level.vhd=-1
+/ALU.vhd=-1
+/ALUControl.vhd=-1
+/ControlUnit.vhd=-1
+
+[Files.Data]
+.\src\InstructionRegister.vhd=VHDL Source Code
+.\src\Memory(RAM).vhd=VHDL Source Code
+.\src\Memory_Data_register.vhd=VHDL Source Code
+.\src\MUX2x1_5bit.vhd=VHDL Source Code
+.\src\MUX2x1_32bit.vhd=VHDL Source Code
+.\src\MUX3x1_32bit.vhd=VHDL Source Code
+.\src\MUX4x1_32bit.vhd=VHDL Source Code
+.\src\Program_Counter.vhd=VHDL Source Code
+.\src\Registers_File.vhd=VHDL Source Code
+.\src\Sign_ext.vhd=VHDL Source Code
+.\src\SL2.vhd=VHDL Source Code
+.\src\SL2_Jump.vhd=VHDL Source Code
+.\src\TempRegisters.vhd=VHDL Source Code
+.\src\TestBench.vhd=VHDL Source Code
+.\src\Top_Level.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\ALUControl.vhd=VHDL Source Code
+.\src\ControlUnit.vhd=VHDL Source Code
+

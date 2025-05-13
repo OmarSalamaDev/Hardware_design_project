@@ -1,0 +1,24 @@
+[Files List]
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\STD/src/standard.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/stdlogic.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/numstd.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/arith.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 6.3\VLIB\IEEE/src/signed.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/TempRegisters.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/SL2_Jump.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/SL2.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/Sign_ext.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/Registers_File.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/Program_Counter.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/MUX3x1_32bit.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/MUX4x1_32bit.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/MUX2x1_32bit.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/MUX2x1_5bit.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/Memory_Data_register.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/Memory(RAM).vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/InstructionRegister.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/ControlUnit.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/ALUControl.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/ALU.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/Top_Level.vhd=S
+C:\Users\Mars\Desktop\Hardware_design_project\design0\design0/src/TestBench.vhd=S

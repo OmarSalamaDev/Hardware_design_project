@@ -1,0 +1,35 @@
+elbread.dll ver. 1.0.5.365 Tue May 13 16:13:54 2025
+
+
+--------------------------------------------------
+Entity               | Architecture      | Library
+--------------------------------------------------
+testbench            | sim               | design0
+top_level            | behavioral        | design0
+alu                  | alu_arch          | design0
+alucontrol           | behavioral        | design0
+controlunit          | behavioral        | design0
+instructionregister  | behavior          | design0
+memory               | behavioral        | design0
+mdr                  | behavioral        | design0
+mux2x1_32bit         | mux2x1_32bit_arch | design0
+mux2x1_5bit          | mux2x1_5bit_arch  | design0
+mux4x1_32bit         | mux4x1_32bit_arch | design0
+mux3x1_32bit         | mux3x1_32bit_arch | design0
+pc                   | behavioral        | design0
+reg_file             | behavioral        | design0
+sign_ext             | sign_ext_arch     | design0
+sl2                  | sl2_arch          | design0
+sl2_jump             | sl2_jump_arch     | design0
+tempregisters        | behavioral        | design0
+--------------------------------------------------
+
+---------------------------
+Package           | Library
+---------------------------
+standard          | std
+std_logic_1164    | ieee
+numeric_std       | ieee
+std_logic_arith   | ieee
+std_logic_signed  | ieee
+---------------------------
