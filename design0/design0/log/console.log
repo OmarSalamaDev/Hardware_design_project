@@ -1,0 +1,76 @@
+acom -reorder $DSN/src/instructionregister.vhd $DSN/src/memory(ram).vhd $DSN/src/memory_data_register.vhd $DSN/src/mux2x1_5bit.vhd $DSN/src/mux2x1_32bit.vhd $DSN/src/mux3x1_32bit.vhd $DSN/src/mux4x1_32bit.vhd $DSN/src/program_counter.vhd $DSN/src/registers_file.vhd $DSN/src/sign_ext.vhd $DSN/src/sl2.vhd $DSN/src/sl2_jump.vhd $DSN/src/tempregisters.vhd $DSN/src/testbench.vhd $DSN/src/top_level.vhd $DSN/src/alu.vhd $DSN/src/alucontrol.vhd $DSN/src/controlunit.vhd
+# Compile with File Reorder...
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\InstructionRegister.vhd
+# Compile Entity "InstructionRegister"
+# Compile Architecture "behavior" of Entity "InstructionRegister"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Memory(RAM).vhd
+# Compile Entity "Memory"
+# Compile Architecture "Behavioral" of Entity "Memory"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Memory_Data_register.vhd
+# Compile Entity "MDR"
+# Compile Architecture "Behavioral" of Entity "MDR"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\MUX2x1_5bit.vhd
+# Compile Entity "MUX2x1_5bit"
+# Compile Architecture "MUX2x1_5bit_ARCH" of Entity "MUX2x1_5bit"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\MUX2x1_32bit.vhd
+# Compile Entity "MUX2x1_32bit"
+# Compile Architecture "MUX2x1_32bit_ARCH" of Entity "MUX2x1_32bit"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\MUX3x1_32bit.vhd
+# Compile Entity "MUX3x1_32bit"
+# Compile Architecture "MUX3x1_32bit_ARCH" of Entity "MUX3x1_32bit"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\MUX4x1_32bit.vhd
+# Compile Entity "MUX4x1_32bit"
+# Compile Architecture "MUX4x1_32bit_ARCH" of Entity "MUX4x1_32bit"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Program_Counter.vhd
+# Compile Entity "PC"
+# Compile Architecture "Behavioral" of Entity "PC"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Registers_File.vhd
+# Compile Entity "Reg_File"
+# Compile Architecture "Behavioral" of Entity "Reg_File"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Sign_ext.vhd
+# Compile Entity "sign_ext"
+# Compile Architecture "sign_ext_ARCH" of Entity "sign_ext"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\SL2.vhd
+# Compile Entity "SL2"
+# Compile Architecture "SL2_ARCH" of Entity "SL2"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\SL2_Jump.vhd
+# Compile Entity "SL2_Jump"
+# Compile Architecture "SL2_Jump_ARCH" of Entity "SL2_Jump"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\TempRegisters.vhd
+# Compile Entity "TempRegisters"
+# Compile Architecture "Behavioral" of Entity "TempRegisters"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\TestBench.vhd
+# Compile Entity "TestBench"
+# Compile Architecture "sim" of Entity "TestBench"
+# Warning: ELAB1_0026: TestBench.vhd : (22, 0): There is no default binding for component "Top_Level".(No entity named "Top_Level" was found).
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Top_Level.vhd
+# Compile Entity "Top_Level"
+# Compile Architecture "Behavioral" of Entity "Top_Level"
+# Warning: ELAB1_0026: Top_Level.vhd : (210, 0): There is no default binding for component "ALU".(No entity named "ALU" was found).
+# Warning: ELAB1_0026: Top_Level.vhd : (211, 0): There is no default binding for component "ALUControl".(No entity named "ALUControl" was found).
+# Warning: ELAB1_0026: Top_Level.vhd : (212, 0): There is no default binding for component "ControlUnit".(No entity named "ControlUnit" was found).
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_ARCH" of Entity "ALU"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\ALUControl.vhd
+# Compile Entity "ALUControl"
+# Compile Architecture "Behavioral" of Entity "ALUControl"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\ControlUnit.vhd
+# Compile Entity "ControlUnit"
+# Compile Architecture "Behavioral" of Entity "ControlUnit"
+# Improper file order detected
+# Automatic file reorder and recompilation required.
+# File reorder and recompilation in progress
+# Top-Level unit detected
+# Entity  =>   TestBench
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\Top_Level.vhd
+# Compile Entity "Top_Level"
+# Entity `Top_Level' has been skipped - no difference detected.
+# Compile Architecture "Behavioral" of Entity "Top_Level"
+# File: C:\Users\Mars\Desktop\Hardware_design_project\design0\design0\src\TestBench.vhd
+# Compile Entity "TestBench"
+# Entity `TestBench' has been skipped - no difference detected.
+# Compile Architecture "sim" of Entity "TestBench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  3.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
