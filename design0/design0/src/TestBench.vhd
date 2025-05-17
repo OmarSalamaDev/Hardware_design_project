@@ -5,8 +5,8 @@ entity TestBench is
 end entity TestBench;
 
 architecture sim of TestBench is
-  signal clk   : std_logic := '0';
-  signal reset : std_logic := '0';
+  signal clk   : std_logic :='0';
+  signal reset : std_logic :='1';
   constant clk_period : time := 12 ns;
   
 
@@ -26,22 +26,26 @@ begin
     );
 
 
-  -- Clock process remains the same
+  
   clock_process : process
   begin
-	  reset <= '1';
-		wait for clk_period;
-		reset <= '0';	 
-		
     for i in 0 to 50 loop
-      clk <= '1';
-      wait for clk_period;
       clk <= '0';
+      wait for clk_period;
+      clk <= '1';
       wait for clk_period;
     end loop;
 	wait;
+  end process;	 
+  
+  -- Reset logic
+  reset_process : process
+  begin
+    reset <= '1';
+    wait for clk_period;
+    reset <= '0';
+    wait;
   end process;
 
 
-end sim;	
-
+end sim;
